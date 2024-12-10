@@ -25,8 +25,9 @@ from ape.types import AddressType, CallTreeNode, SnapshotID, TraceFrame
 from ape.utils import cached_property
 from ape_ethereum.provider import Web3Provider
 from ape_test import ApeTestConfig
+from cchecksum import to_checksum_address
 from eth_pydantic_types import HexBytes
-from eth_utils import to_checksum_address, to_hex
+from eth_utils import to_hex
 from evm_trace import CallType
 from evm_trace import TraceFrame as EvmTraceFrame
 from evm_trace import get_calltree_from_geth_trace
